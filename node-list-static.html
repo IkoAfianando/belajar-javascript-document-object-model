@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeList Static</title>
+</head>
+<body>
+<ul id="menu1">
+    <li id="first">First</li>
+    <li id="second">Second</li>
+    <li id="third">Third</li>
+</ul>
+<ul id="menu2">
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+</ul>
+<script>
+
+    let list;
+    const menu1 = document.getElementById("menu1");
+
+    menu1.appendChild(document.createElement("li"));
+    menu1.appendChild(document.createElement("li"));
+
+    list = document.querySelectorAll("li");
+    console.log(list);
+
+</script>
+</body>
+</html>

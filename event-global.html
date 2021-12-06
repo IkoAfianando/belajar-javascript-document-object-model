@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Global</title>
+</head>
+<body>
+<input type="button" id="clicMe" value="Click Me!">
+
+<script>
+
+    const button = document.getElementById("clicMe");
+    button.onclick = function() {
+        button.setAttribute("value", "You Already Click Me!");
+        console.log(`Button di Click!`);
+    };
+
+</script>
+
+</body>
+</html>
